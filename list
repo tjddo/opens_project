@@ -1,0 +1,47 @@
+from ctypes import pointer
+from logging import root
+from tkinter import*
+import tkinter
+import tkinter as tk
+from tkinter import ttk
+
+window = Tk()
+window.title("독후감 매크로")
+window.geometry("650x450")
+window.resizable(width = FALSE, height = FALSE)
+window.configure(bg='white')
+window.option_add("*Font","Pretendard-Medium 15")
+ent=Entry(window)
+ent.place(x=160, y=30)
+ent.place()
+
+lab2=Label(window)
+lab2.configure(bg='white')
+lab2.config(text="'  '에 대한 검색 목록")
+lab2.place(x=200, y=80)
+lab2.place()
+
+photo = tkinter.PhotoImage(file = "ff.png")
+label1=Label(window, image=photo)
+label1.pack(side="left", padx=50, pady=10)
+label1.pack()
+
+lab2=Label(window)
+lab2.configure(bg='white')
+lab2.config(text="제목", padx=10, pady=10)
+lab2.pack(side="left")
+lab2.pack()
+
+photo = tkinter.PhotoImage(file = "ff.png")
+label1=Label(window, image=photo)
+label1.pack(side="left", padx=50, pady=10)
+label1.pack()
+
+lab2=Label(window)
+lab2.configure(bg='white')
+lab2.config(text="제목", padx=10, pady=10)
+lab2.pack(side="left")
+lab2.pack()
+
+
+window.mainloop()
